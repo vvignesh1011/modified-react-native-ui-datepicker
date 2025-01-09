@@ -81,7 +81,6 @@ const DateTimePicker = (
     onChange,
     initialView = 'day',
     height,
-    TodayDate,
     ...rest
   } = props;
 
@@ -294,7 +293,6 @@ const DateTimePicker = (
     <CalendarContext.Provider
       value={{
         ...state,
-        TodayDate,
         locale,
         mode,
         displayFullDays,

@@ -31,7 +31,7 @@ export const getDateMonth = (date: DateType) => dayjs(date).month();
 
 export const getDateYear = (date: DateType) => dayjs(date).year();
 
-export const getToday = (timeZone:string) => timeZone?dayjs().format(DATE_FORMAT):dayjs().format(DATE_FORMAT);
+export const getToday = () => dayjs().format(DATE_FORMAT);
 
 export function areDatesOnSameDay(a: DateType, b: DateType) {
   if (!a || !b) {

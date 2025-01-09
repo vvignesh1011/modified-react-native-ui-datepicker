@@ -36,7 +36,6 @@
     "bootstrap": "yarn example && yarn install"
   },
   "keywords": [
-   
   ],
   "repository": "https://github.com/vvignesh1011/modified-react-native-ui-datepicker.git",
   
