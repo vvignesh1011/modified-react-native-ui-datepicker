@@ -30,13 +30,14 @@ const DaySelector = () => {
     firstDayOfWeek,
     theme,
     height,
+    TodayDate,
   } = useCalendarContext();
 
   const { year, month, hour, minute } = getParsedDate(currentDate);
 
   const daysGrid = useMemo(
     () => {
-      const today = new Date();
+      const today = TodayDate || new Date();
 
       const { fullDaysInMonth } = getDaysInMonth(
         currentDate,

@@ -16,6 +16,8 @@ export interface DatePickeMultipleProps extends CalendarThemeProps, HeaderProps,
     dates?: DateType[];
     onChange?: MultiChange;
 }
-declare const _default: React.MemoExoticComponent<(props: DatePickerSingleProps | DatePickerRangeProps | DatePickeMultipleProps) => React.JSX.Element>;
+declare const _default: React.MemoExoticComponent<(props: (DatePickerSingleProps | DatePickerRangeProps | DatePickeMultipleProps) & {
+    TodayDate?: Date | undefined;
+}) => React.JSX.Element>;
 export default _default;
 //# sourceMappingURL=DateTimePicker.d.ts.map

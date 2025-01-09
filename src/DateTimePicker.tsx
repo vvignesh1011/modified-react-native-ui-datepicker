@@ -59,7 +59,11 @@ export interface DatePickeMultipleProps
 }
 
 const DateTimePicker = (
-  props: (DatePickerSingleProps | DatePickerRangeProps | DatePickeMultipleProps)& {TodayDate?:Date}
+  props: (
+    | DatePickerSingleProps
+    | DatePickerRangeProps
+    | DatePickeMultipleProps
+  ) & { TodayDate?: Date }
 ) => {
   const {
     mode = 'single',
@@ -81,6 +85,7 @@ const DateTimePicker = (
     onChange,
     initialView = 'day',
     height,
+    TodayDate,
     ...rest
   } = props;
 
@@ -309,6 +314,7 @@ const DateTimePicker = (
         onSelectYear,
         onChangeMonth,
         onChangeYear,
+        TodayDate,
       }}
     >
       <Calendar

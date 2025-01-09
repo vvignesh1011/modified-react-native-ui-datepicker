@@ -15,6 +15,7 @@ export interface CalendarContextType extends DatePickerBaseProps {
     onSelectYear: (year: number) => void;
     onChangeMonth: (value: number) => void;
     onChangeYear: (value: number) => void;
+    TodayDate?: Date;
 }
 declare const CalendarContext: import("react").Context<CalendarContextType>;
 export declare const useCalendarContext: () => CalendarContextType;
